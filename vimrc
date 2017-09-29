@@ -11,10 +11,9 @@ hi LineNr         ctermfg=DarkMagenta guifg=#2b506e guibg=#000000
 hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
 set cursorline
 " Setting scroll to always show some lines
-set scrolloff=3
+set scrolloff=5
 " Removing autocomment after a commented line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
-
 
 
 "

@@ -12,6 +12,9 @@ hi CursorLineNr   term=bold ctermfg=Yellow gui=bold guifg=Yellow
 set cursorline
 " Setting scroll to always show some lines
 set scrolloff=3
+" Removing autocomment after a commented line
+autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+
 
 
 "
@@ -81,6 +84,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
+Plugin 'tpope/vim-fugitive'
+
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

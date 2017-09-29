@@ -1,0 +1,43 @@
+###
+# Base
+###
+apt-get update
+dpkg --configure -a
+apt-get install aptitude
+aptitude install git
+ssh-keygen
+git clone git@github.com:FulcrandG/randomFiles.git
+
+###
+# Zsh
+###
+aptitude install zsh
+zsh
+
+###
+# Powerline and Oh-My-Zsh
+###
+git clone https://github.com/powerline/fonts.git --depth=1
+# install
+cd fonts
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+# edit ~/.zshrc ZSH_THEME="agnoster"
+# Change font in terminal settings if some characters are not showing properly
+
+###
+# Vim
+###
+ln -s randomFiles/vimrc ~/.vimrc
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+vi
+:PluginInstall
+
+###
+# Terminator
+###
+aptitude install terminator
+echo "alias terminator='terminator -m -b' >> ~/.zshrc

@@ -4,6 +4,8 @@
 apt-get update
 dpkg --configure -a
 apt-get install aptitude
+aptitude install vim-gnome
+aptitude install curl
 aptitude install git
 ssh-keygen
 git clone git@github.com:FulcrandG/randomFiles.git
@@ -26,7 +28,6 @@ cd ..
 rm -rf fonts
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 # edit ~/.zshrc ZSH_THEME="agnoster"
-# Change font in terminal settings if some characters are not showing properly
 
 ###
 # Vim
@@ -41,3 +42,8 @@ vi
 ###
 aptitude install terminator
 echo "alias terminator='terminator -m -b' >> ~/.zshrc
+# Change keybindings to open terminator on <C-t>
+# Change font in terminal settings (Inconsolata-g for Powerline g - 12) if some characters are not showing properly
+# Change transparency in background terminator setting (0.8)
+aptitude install htop
+# Set basic layout in terminator

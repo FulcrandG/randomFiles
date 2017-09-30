@@ -14,6 +14,8 @@ set cursorline
 set scrolloff=5
 " Removing autocomment after a commented line
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" Do NOT SHOW complete line if it goes beyond the end of the terminal size
+set nowrap
 
 
 "
@@ -22,12 +24,6 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Share clipboard buffers
 set clipboard=unnamed
 set paste
-
-
-"
-" Do NOT SHOW complete line if it goes beyond the end of the terminal size
-"
-set nowrap
 
 
 "
@@ -54,10 +50,11 @@ set expandtab
 set shiftwidth=4
 set softtabstop=4
 
+
 "
 " Highlight trailing whitespaces
 "
-:highlight ExtraWhitespace ctermbg=yellow guibg=yellow
+highlight ExtraWhitespace ctermbg=yellow guibg=yellow
 autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 
 

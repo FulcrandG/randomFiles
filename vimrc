@@ -43,6 +43,12 @@ filetype plugin indent on    " required
 
 
 "
+" YouCompleteMe settings
+"
+let g:ycm_global_ycm_extra_conf = '~/randomFiles/ycm_extra_conf.py'
+
+
+"
 " Set powerline fonts for airline
 "
 let g:airline_powerline_fonts = 1

@@ -23,6 +23,7 @@ Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
 "Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -170,3 +171,6 @@ set hlsearch
 hi Search cterm=NONE ctermfg=black ctermbg=8
 " Clear current search highlight by double tapping //
 nmap <silent> // :nohlsearch<CR>
+" Better search
+set ignorecase
+set smartcase

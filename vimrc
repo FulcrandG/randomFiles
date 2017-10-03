@@ -82,6 +82,7 @@ let g:syntastic_check_on_wq = 0
 "
 " Tagbar handling
 "
+let g:tagbar_usearrows = 1
 nnoremap <C-f> :TagbarToggle<CR>
 
 

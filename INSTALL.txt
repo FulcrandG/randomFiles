@@ -53,3 +53,10 @@ export VISUAL=vim
 export EDITOR="$VISUAL"                                                              
 export TERM=screen-256color
 DISABLE_AUTO_TITLE=true
+
+###
+# YCM
+###
+aptitude install cmake
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --clang-completer

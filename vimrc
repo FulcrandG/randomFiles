@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 "Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Valloric/YouCompleteMe'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -174,3 +175,4 @@ nmap <silent> // :nohlsearch<CR>
 " Better search
 set ignorecase
 set smartcase
+set encoding=utf-8

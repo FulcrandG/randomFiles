@@ -118,15 +118,15 @@ nnoremap <C-down> <C-W><down>
 " Resize split window horizontally and vertically
 " 
 " Shortcuts to Shift-Alt-Up - Alt is mapped as M in vim
-nmap <S-M-Up> :2winc+<cr>
-imap <S-M-Up> <Esc>:2winc+<cr>i
-nmap <S-M-Down> :2winc-<cr>
-imap <S-M-Down> <Esc>:2winc-<cr>i
+nmap <silent> <S-M-Up> :2winc+<cr>
+imap <silent> <S-M-Up> <Esc>:2winc+<cr>i
+nmap <silent> <S-M-Down> :2winc-<cr>
+imap <silent> <S-M-Down> <Esc>:2winc-<cr>i
 
-nmap <S-M-Left> :2winc><cr>
-imap <S-M-Left> <Esc>:2winc><cr>i
-nmap <S-M-Right> :2winc<<cr>
-imap <S-M-Right> <Esc>:2winc<<cr>i
+nmap <silent> <S-M-Left> :2winc><cr>
+imap <silent> <S-M-Left> <Esc>:2winc><cr>i
+nmap <silent> <S-M-Right> :2winc<<cr>
+imap <silent> <S-M-Right> <Esc>:2winc<<cr>i
 
 
 "
@@ -159,6 +159,8 @@ syntax enable
 set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
+" Set transparent background
+"hi Normal guibg=NONE ctermbg=NONE
 
 
 "

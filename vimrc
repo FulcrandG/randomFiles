@@ -180,8 +180,19 @@ set background=dark
 let g:solarized_termcolors=256
 colorscheme solarized
 " Set transparent background
-"hi Normal guibg=NONE ctermbg=NONE
-
+nnoremap <C-t> :call ToggleTransparency()<CR>
+function! ToggleTransparency()
+    if !exists("g:transparency")
+        let g:transparency="true"
+    endif
+    if g:transparency == "true"
+        :highlight Normal guibg=NONE ctermbg=NONE
+        let g:transparency="false"
+    else
+        :silent! highlight Normal guibg=234 ctermbg=234
+        let g:transparency="true"
+    endif
+endfunction
 
 "
 " Handling searchs

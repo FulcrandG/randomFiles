@@ -158,7 +158,7 @@ endif
 
 
 "
-" Set tabs to 4 spaces
+" Handling tabs
 "
 set expandtab
 set shiftwidth=4

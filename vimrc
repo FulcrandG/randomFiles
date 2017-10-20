@@ -46,6 +46,7 @@ filetype plugin indent on    " required
 " YouCompleteMe settings
 "
 let g:ycm_global_ycm_extra_conf = '~/randomFiles/ycm_extra_conf.py'
+set tags+=~/.vim/systags
 
 
 "
@@ -193,6 +194,7 @@ function! ToggleTransparency()
         let g:transparency="true"
     endif
 endfunction
+
 
 "
 " Handling searchs

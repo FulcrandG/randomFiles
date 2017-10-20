@@ -57,6 +57,7 @@ DISABLE_AUTO_TITLE=true
 ###
 # YCM
 ###
-aptitude install cmake
+aptitude install cmake exuberant-ctags
 cd ~/.vim/bundle/YouCompleteMe
 ./install.py --clang-completer
+ctags -R -f ~/.vim/systags /usr/include /usr/local/include

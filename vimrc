@@ -162,8 +162,8 @@ endif
 " Handling tabs
 "
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=8
+set softtabstop=8
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
 

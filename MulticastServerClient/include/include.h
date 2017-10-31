@@ -25,7 +25,7 @@
 #define DEFAULT_MUL_ADDR    "224.1.1.1"
 #define DEFAULT_PORT        1234
 #define BUFF_SIZE           255
-#define TIMEOUT             60 // timeout of 60 sec on server
+#define TIMEOUT             -1 // timeout of 60 sec on server
 
 typedef struct  s_info
 {

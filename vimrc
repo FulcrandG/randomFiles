@@ -46,6 +46,7 @@ filetype plugin indent on    " required
 " YouCompleteMe settings
 "
 let g:ycm_global_ycm_extra_conf = '~/randomFiles/ycm_extra_conf.py'
+set tags+=~/.vim/systags
 
 
 "
@@ -158,11 +159,13 @@ endif
 
 
 "
-" Set tabs to 4 spaces
+" Handling tabs
 "
 set expandtab
 set shiftwidth=4
 set softtabstop=4
+" Allow backspacing over autoindent, line breaks and start of insert action
+set backspace=indent,eol,start
 
 
 "

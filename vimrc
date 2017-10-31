@@ -21,7 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Valloric/YouCompleteMe'
@@ -193,6 +193,7 @@ function! ToggleTransparency()
         let g:transparency="true"
     endif
 endfunction
+
 
 "
 " Handling searchs

@@ -1,0 +1,29 @@
+# GENERAL CONF
+set ftp:charset UTF8
+set cache:enable false
+set xfer:clobber false
+set cmd:fail-exit true
+set ftp:client ftp
+set ftp:home '/'
+set ftp:nop-interval 60
+set ftp:rest-list true
+set ftp:use-fxp false
+set net:reconnect-interval-base 1
+set net:reconnect-interval-multiplier 2
+set net:reconnect-interval-max 180
+set net:max-retries 5
+set net:timeout 10
+
+# SSL CONF
+set ssl:check-hostname true
+set ssl:verify-certificate true
+set ssl:ca-file '/var/local/certs/ftp-remote-ca.crt'
+set ftp:ssl-force 1
+
+set ssl:key-file '/var/local/ftppush.pem'
+set ssl:cert-file '/var/local/certs/ftpc.crt'
+    
+set ftp:ssl-protect-data 1
+
+open 'ftp://192.168.1.1:21'
+user 'ftpuser'

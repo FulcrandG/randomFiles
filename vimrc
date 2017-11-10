@@ -138,7 +138,8 @@ nnoremap <C-up> <C-W><up>
 nnoremap <C-down> <C-W><down>
 nnoremap <C-W><left> :tabn<CR>
 nnoremap <C-W><right> :tabp<CR>
-
+nnoremap <C-p> :tabnew<CR>
+nnoremap <C-m> :tabclose<CR>
 
 
 "

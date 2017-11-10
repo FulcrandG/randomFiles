@@ -21,7 +21,7 @@ Plugin 'altercation/vim-colors-solarized'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-fugitive'
-"Plugin 'xolox/vim-easytags'
+" Plugin 'xolox/vim-easytags'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Valloric/YouCompleteMe'
@@ -168,8 +168,8 @@ endif
 " Handling tabs
 "
 set expandtab
-set shiftwidth=4
-set softtabstop=4
+set shiftwidth=8
+set softtabstop=8
 " Allow backspacing over autoindent, line breaks and start of insert action
 set backspace=indent,eol,start
 

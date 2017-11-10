@@ -25,6 +25,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'majutsushi/tagbar'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'webdevel/tabulous'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -87,7 +88,9 @@ let g:tagbar_usearrows = 1
 nnoremap <C-f> :TagbarToggle<CR>
 
 
+"
 " Commenting blocks of code.
+"
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
 autocmd FileType sh,ruby,python   let b:comment_leader = '# '
 autocmd FileType conf,fstab       let b:comment_leader = '# '
@@ -127,12 +130,15 @@ set paste
 
 
 "
-" Remap switching between splits with Ctrl+dir
+" Remap switching between splits and tabs with Ctrl+dir
 "
-nnoremap <C-left> <C-W><left>
-nnoremap <C-right> <C-W><right>
+nnoremap <C-left> <C-W><left><CR>
+nnoremap <C-right> <C-W><right><CR>
 nnoremap <C-up> <C-W><up>
 nnoremap <C-down> <C-W><down>
+nnoremap <C-W><left> :tabn<CR>
+nnoremap <C-W><right> :tabp<CR>
+
 
 
 "

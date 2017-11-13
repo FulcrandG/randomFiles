@@ -14,7 +14,6 @@ git clone git@github.com:FulcrandG/randomFiles.git
 # Zsh
 ###
 aptitude install zsh
-zsh
 
 ###
 # Powerline and Oh-My-Zsh
@@ -30,23 +29,18 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # edit ~/.zshrc ZSH_THEME="agnoster"
 
 ###
+# Tmux
+###
+aptitude install tmux
+ln -s randomFiles/tmux.conf ~/.tmux.conf
+
+###
 # Vim
 ###
 ln -s randomFiles/vimrc ~/.vimrc
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vi
 :PluginInstall
-
-###
-# Terminator
-###
-aptitude install terminator
-echo "alias terminator='terminator -m -b' >> ~/.zshrc
-# Change keybindings to open terminator on <C-t>
-# Change font in terminal settings (Inconsolata-g for Powerline g - 12) if some characters are not showing properly
-# Change transparency in background terminator setting (0.8)
-aptitude install htop
-# Set basic layout in terminator
 
 # Edit ~/.zshrc and append :
 export VISUAL=vim                                                                    

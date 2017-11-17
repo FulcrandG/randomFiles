@@ -1,5 +1,11 @@
 "
-" Vundle
+" Handling mouse
+"
+set mouse=a
+
+
+"
+" Vundle (plugin manager)
 "
 set nocompatible              " be iMproved, required
 filetype off                  " required

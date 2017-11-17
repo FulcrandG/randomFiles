@@ -74,13 +74,13 @@ nmap <silent> <C-d> :NERDTreeToggle<CR>
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " In order to not get errors from gcc asm compilation
 let g:syntastic_asm_compiler = "nasm"
+autocmd BufNewFile,BufRead *.asm set filetype=nasm
 
 
 "
@@ -94,6 +94,7 @@ nnoremap <C-f> :TagbarToggle<CR>
 " Commenting blocks of code.
 "
 autocmd FileType c,cpp,java,scala let b:comment_leader = '// '
+autocmd FileType asm              let b:comment_leader = '; '
 autocmd FileType sh,ruby,python   let b:comment_leader = '# '
 autocmd FileType conf,fstab       let b:comment_leader = '# '
 autocmd FileType tex              let b:comment_leader = '% '
@@ -134,14 +135,14 @@ set paste
 "
 " Remap switching between splits and tabs with Ctrl+dir
 "
-nnoremap <C-left> <C-W><left><CR>
-nnoremap <C-right> <C-W><right><CR>
-nnoremap <C-up> <C-W><up>
-nnoremap <C-down> <C-W><down>
-nnoremap <C-W><left> :tabn<CR>
-nnoremap <C-W><right> :tabp<CR>
-nnoremap <C-p> :tabnew<CR>
-nnoremap <C-m> :tabclose<CR>
+nnoremap <silent> <C-left> <C-W><left><CR>
+nnoremap <silent> <C-right> <C-W><right><CR>
+nnoremap <silent> <C-up> <C-W><up>
+nnoremap <silent> <C-down> <C-W><down>
+nnoremap <silent> <C-W><left> :tabn<CR>
+nnoremap <silent> <C-W><right> :tabp<CR>
+nnoremap <silent> <C-p> :tabnew<CR>
+nnoremap <silent> <C-m> :tabclose<CR>
 
 
 "

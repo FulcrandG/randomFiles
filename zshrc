@@ -68,6 +68,10 @@ plugins=(git)
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+# No need for too much history
+HISTSIZE=1000
+SAVEHIST=1000
+
 # Setting theme
 ZSH_THEME="agnoster"
 

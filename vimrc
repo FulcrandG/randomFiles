@@ -77,6 +77,7 @@ nmap <silent> <C-d> :NERDTreeToggle<CR>
 "
 " Syntastic handling
 "
+:command Sd SyntasticToggleMode
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -86,6 +87,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " In order to not get errors from gcc asm compilation
 let g:syntastic_asm_compiler = "nasm"
+let g:syntastic_asm_compiler_options = "-f elf"
 autocmd BufNewFile,BufRead *.asm set filetype=nasm
 
 

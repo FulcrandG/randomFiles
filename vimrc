@@ -147,8 +147,8 @@ nnoremap <silent> <C-left> <C-W><left><CR>
 nnoremap <silent> <C-right> <C-W><right><CR>
 nnoremap <silent> <C-up> <C-W><up>
 nnoremap <silent> <C-down> <C-W><down>
-nnoremap <silent> <C-W><left> :tabn<CR>
-nnoremap <silent> <C-W><right> :tabp<CR>
+nnoremap <silent> <C-W><left> :tabp<CR>
+nnoremap <silent> <C-W><right> :tabn<CR>
 nnoremap <silent> <C-p> :tabnew<CR>
 nnoremap <silent> <C-m> :tabclose<CR>
 

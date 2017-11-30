@@ -56,11 +56,11 @@ plugins=(git)
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+        export EDITOR='vim'
+else
+        export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -84,3 +84,9 @@ export TERM='xterm-256color'
 # For a full list of active aliases, run `alias`.
 
 alias ll='ls -la'
+alias blih='blih -u guilhem.fulcrand@epitech.eu'
+alias ne='emacs'
+alias re='make re'
+alias create='prepare_my_repo.sh'
+alias gitl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
+ %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"

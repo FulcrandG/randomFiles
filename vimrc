@@ -150,7 +150,7 @@ nnoremap <silent> <C-down> <C-W><down>
 nnoremap <silent> <C-W><left> :tabp<CR>
 nnoremap <silent> <C-W><right> :tabn<CR>
 nnoremap <silent> <C-p> :tabnew<CR>
-nnoremap <silent> <C-m> :tabclose<CR>
+"nnoremap <silent> <C-m> :tabclose<CR>          [FIX] Ctrl+m send the same keys as Enter, not really usefull
 
 
 "

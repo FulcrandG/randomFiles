@@ -77,7 +77,7 @@ nmap <silent> <C-d> :NERDTreeToggle<CR>
 "
 " Syntastic handling
 "
-:command Sd SyntasticToggleMode
+command! Sd SyntasticToggleMode
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -87,7 +87,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 " In order to not get errors from gcc asm compilation
 let g:syntastic_asm_compiler = "nasm"
-let g:syntastic_asm_compiler_options = "-f elf"
+let g:syntastic_asm_compiler_options = "-f elf64"
 autocmd BufNewFile,BufRead *.asm set filetype=nasm
 
 
@@ -143,8 +143,8 @@ set paste
 "
 " Remap switching between splits and tabs with Ctrl+dir
 "
-nnoremap <silent> <C-left> <C-W><left><CR>
-nnoremap <silent> <C-right> <C-W><right><CR>
+nnoremap <silent> <C-left> <C-W><left><CR><up>
+nnoremap <silent> <C-right> <C-W><right><CR><up>
 nnoremap <silent> <C-up> <C-W><up>
 nnoremap <silent> <C-down> <C-W><down>
 nnoremap <silent> <C-W><left> :tabp<CR>
@@ -196,24 +196,25 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 "
 " Set colorscheme
 "
+set t_Co=256
 syntax enable
 set background=dark
-let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
 colorscheme solarized
-" Set transparent background
-nnoremap <C-t> :call ToggleTransparency()<CR>
-function! ToggleTransparency()
-    if !exists("g:transparency")
-        let g:transparency="true"
-    endif
-    if g:transparency == "true"
-        :highlight Normal guibg=NONE ctermbg=NONE
-        let g:transparency="false"
-    else
-        :silent! highlight Normal guibg=234 ctermbg=234
-        let g:transparency="true"
-    endif
-endfunction
+" Set transparent background # No more used
+"nnoremap <C-t> :call ToggleTransparency()<CR>
+"function! ToggleTransparency()
+"    if !exists("g:transparency")
+"        let g:transparency="true"
+"    endif
+"    if g:transparency == "true"
+        :highlight Normal guibg=NONE ctermbg=NONE " <-- only way to have a consistent background color
+"        let g:transparency="false"
+"    else
+"        :silent! highlight Normal guibg=234 ctermbg=234
+"        let g:transparency="true"
+"    endif
+"endfunction
 
 
 "

@@ -59,7 +59,7 @@ plugins=(git)
 if [[ -n $SSH_CONNECTION ]]; then
         export EDITOR='vim'
 else
-        export EDITOR='mvim'
+        export EDITOR='gvim'
 fi
 
 # Compilation flags
@@ -82,6 +82,11 @@ export TERM='xterm-256color'
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
+
+# Auto-suggestion in zsh
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=23'
+bindkey '^ ' autosuggest-accept
 
 alias ll='ls -la'
 alias blih='blih -u guilhem.fulcrand@epitech.eu'

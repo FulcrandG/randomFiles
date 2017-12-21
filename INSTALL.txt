@@ -29,6 +29,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 # edit ~/.zshrc ZSH_THEME="agnoster"
 
 ###
+# zsh auto-suggestion
+###
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+
+###
 # Tmux
 ###
 aptitude install tmux

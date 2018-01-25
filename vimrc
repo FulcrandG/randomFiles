@@ -199,7 +199,7 @@ autocmd BufWinEnter * match ExtraWhitespace /\s\+$/
 set t_Co=256
 syntax enable
 set background=dark
-"let g:solarized_termcolors=256
+let g:solarized_termcolors=256
 colorscheme solarized
 " Set transparent background # No more used
 "nnoremap <C-t> :call ToggleTransparency()<CR>

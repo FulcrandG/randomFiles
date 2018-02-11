@@ -1,0 +1,6 @@
+{
+    "repositoryRoot": "/home/guilhem/docker/minecraft-docker/forge/libraries",
+    "modRef": [
+        "net.minecraftforge:MercuriusUpdater:1.12.2"
+    ]
+}
